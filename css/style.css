@@ -177,6 +177,9 @@ footer{
 .pb-50{
     padding-bottom:50px;
 }
+.br-50{
+    border-radius:50%;
+}
 .justify-content-end{
     justify-content:end;
 }
@@ -194,4 +197,4 @@ footer{
     height:10%;
     vertical-align:middle;
 }
-/* responsive section */
+
