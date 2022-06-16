@@ -94,15 +94,18 @@ main{
 #content section{
  padding:20px;
 }
-#content figure{
-    transition: transform 0,5s;
+#content #Recently-Played figure{
+    position:relative;
+    transition:transform 0,5s;
 }
-
+#content article{
+    cursor:pointer;
+}
 
 #content article:hover figure{
     transform: scale(1.10) translateY(-10px);
 }
-#content article:hover figure ::before{
+#content .main-images article:hover figure ::before{
     content:'';
     position:absolute;
     top:0;
@@ -111,14 +114,14 @@ main{
     bottom:0;
     color: rgba(0, 0, 0, 0,5);
 }
-#content article:hover figure ::after{
-    content: "\f1ea";
+#content #Recently-Played article:hover figure ::after{
+    content: '\f144';
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     color:white;
-    font-size: 24px;
+    font-size: 32px;
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
 }
