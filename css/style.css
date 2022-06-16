@@ -36,6 +36,7 @@ img{
     overflow-y: hidden;
 }
 .sidebar-small{
+    width:120px;
     background-color:rgb(1,0,1);
 }
 .navbar-top{
@@ -87,8 +88,39 @@ main{
     overflow-y:auto;
     
 }
+#content{
+    overflow-y:auto;
+}
 #content section{
  padding:20px;
+}
+#content figure{
+    transition: transform 0,5s;
+}
+
+
+#content article:hover figure{
+    transform: scale(1.10) translateY(-10px);
+}
+#content article:hover figure ::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    color: rgba(0, 0, 0, 0,5);
+}
+#content article:hover figure ::after{
+    content: "\f1ea";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-size: 24px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
 }
 .main-images{
     display:flex;
@@ -107,7 +139,7 @@ header{
     top:0;
     left:220px;
     right:0;
-    background-color: rgb(23,25,37,0,7);
+    background-color: rgba(0, 0, 0,0.8);
     z-index: 1;
 }
 
@@ -196,5 +228,11 @@ footer{
     width:10%;
     height:10%;
     vertical-align:middle;
+}
+.logo-small{
+    width:50%;
+}
+.icon-image-small{
+    width:50%;
 }
 
