@@ -1,69 +1,68 @@
 @media screen and (max-width:992px) {
-   .max-images{
-       width:calc(100% / 4);
-   }
-   .main-navbar li{
-       width:20%;
-        margin-bottom: 10px;
-   }
-}
-@media screen and (max-width:768px) {
     .max-images{
-        width:calc(100% / 2);
-        padding:5px;
+        width:calc(100% / 4);
     }
     .main-navbar li{
-        width:33%;
+        width:20%;
          margin-bottom: 10px;
     }
-    .sidebar{
-        display:none;
-    }
-    .logo{
-        display:none;
-    }
-    .sidebar-small{
-        display:initial;
-        width:100%;
-        z-index:1;
-    }
-    .main-content{
-        width:100%;
-    }
-    .trasparent-header{
-        width:100%;
-    }
-    /* .main-navbar{ */
-        /* width:calc(100% / 4);
-        flex-wrap:wrap; */
-    /* } */
-}
-@media screen and (max-width:568px) {
-    .main-navbar li{
-        width:25%;
-        font-size:40%;
-        margin-bottom: 5px;
-    }
-    .sidebar{
-        display:initial;
-        width:220px;
-    }
-    .logo{
-        display:initial;
-        margin-top:10px;
-    }
     .sidebar-small{
         display:none;
-        
     }
-    .logo-small{
-        display:none;
+ }
+ @media screen and (max-width:768px) {
+     .main-images li{
+         flex-basis:25%;
+         padding:5px;
+     }
+     .main-navbar li{
+         width:33%;
+          margin-bottom: 10px;
+     }
+     #side-navbar{
+         display:none;
+     }
+     .logo{
+         display:none;
+     }
+     .sidebar-small{
+         display:initial;
+         z-index:1;
+     }
+     .main-content{
+         width:100%;
+     }
+     .trasparent-header{
+         width:100%;
+     }
+ }
+ @media screen and (max-width:568px) {
+     .main-navbar li{
+         width:25%;
+         font-size:40%;
+         margin-bottom: 5px;
+     }
+     #side-navbar {
+         display:initial;
+         flex-basis:80px;
+     }
+     .logo{
+         display:initial;
+         margin-top:10px;
+     }
+     .sidebar-small{
+         display:none;
+         
+     }
+     .logo-small{
+         display:none;
+     }
+     .main-images li{
+        flex-basis:50%;
+        padding:5px;
     }
-    .main-content{
-        width:100%;
-    }
-    .trasparent-header{
-        width:calc(100% - 220px);
-    }
-    }
-    
+     .trasparent-header{
+         width:calc(100% - 220px);
+     }
+     }
+     
