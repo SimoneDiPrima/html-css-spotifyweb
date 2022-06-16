@@ -9,38 +9,44 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/77b4cc17b1.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Spotify</title>
 </head>
 <body>
-    
     <div class="flex-container">
         <div class="upper-content">
-            <div class="sidebar">
-                <div class="logo">
+        
+        <nav id="side-navbar">
+            <div class="navbar-top ml-10">
+                <div class="logo pt-20">
                     <img src="./img/logo.svg" id="logo-image" alt="">
                 </div>
-                <div class="side-navbar-up">
-                    <ul>
-                        <li class="list-item-nav">
-                            <img src="./img/home.svg" class="icon-image" alt="">
-                            home</li>
-                        <li class="list-item-nav">
-                            <img src="./img/search.svg" class="icon-image" alt="">
-                            cerca</li>
-                        <li class="list-item-nav">
-                            <img src="./img/libreria.svg" class="icon-image" alt="">
-                            la tua libreria</li>
-                    </ul>  
-                </div>
-                <div class="side-navbar-down">
-                    <ul>
-                        <li class="list-item-nav">Playlist</li>
+                <ul class="main-navside-menu mt-50">
+                    <li class="list-item-nav">
+                        <img src="./img/home.svg" class="icon-image" alt="">
+                        home
+                    </li>
+                    <li class="list-item-nav">
+                        <img src="./img/search.svg" class="icon-image" alt="">
+                        cerca
+                    </li>
+                    <li class="list-item-nav">
+                        <img src="./img/libreria.svg" class="icon-image" alt="">
+                        la tua libreria
+                    </li>
+                </ul>
+                <div class="playlist mt-50 pb-50">
+                    <div class="title-section-playlist pb-50">
+                        <h3 class="">Playlist</h3>
 
-                        <li class="list-item-nav first-playlist">
+                        <span class="">
                             <i class="fa-solid fa-square-plus icon-playlist"></i>
-                            Crea Playlist</li>
+                            Crea Playlist
+                        </span>
+
+                    </div>
+                    <ul class="playlist-overmenu">
                         <li class="list-item-nav">crea la tua playlist</li>
                         <li class="list-item-nav">crea la tua playlist</li>
                         <li class="list-item-nav">crea la tua playlist</li>
@@ -50,161 +56,215 @@
                         <li class="list-item-nav">crea la tua playlist</li>
                     </ul>
                 </div>
+            </div>
+            <div class="navbar-down ml-10">
                 <div class="navbar-footer">
                     <img src="./img/download.svg" class="icon-image" id="smaller" alt="">
                     <span class="list-item-nav">installa app</span>
                     <hr>
                 </div>
                 <div class="navbar-footer ">
-                    <img src="./img/profile.svg" class="icon-image-footer border-50 greycolor" alt="">
+                    <img src="./img/profile.svg" class="icon-image border-50 greycolor" alt="">
                     <strong>Jhon Doe</strong>
                 </div>
             </div>
-            <div class="sidebar-small">
-                <ul class="flex-sidebar-small">
-                    <li class="logo-small">
-                        <img src="./img/logo-small.svg" id="logo-small" alt="">
+
+        </nav>
+        <div class="sidebar-small d-none">
+            <ul class="flex-sidebar-small">
+                <li class="logo-small">
+                    <img src="./img/logo-small.svg" id="logo-small" alt="">
+                </li>
+                <ul class="small-icon-menu">
+                    <li class="icons">
+                        <img src="./img/home.svg" class="icon-image-small" alt="">
                     </li>
-                    <ul class="small-icon-menu">
-                        <li class="icons">
-                            <img src="./img/home.svg" class="icon-image-small" alt="">
-                        </li>
-                        <li class="icons">
-                            <img src="./img/search.svg" class="icon-image-small" alt="">
-                        </li>
-                        <li class="icons">
-                            <img src="./img/libreria.svg" class="icon-image-small" alt="">
-                        </li>
-                    </ul>
-                    <li class="navbar-footer">
-                        <img src="./img/download.svg" class="icon-image-footer" id="download" alt="">
-                        <span class="list-item-nav">installa app</span>
-                        <hr>
+                    <li class="icons">
+                        <img src="./img/search.svg" class="icon-image-small" alt="">
                     </li>
-                    <li class="navbar-footer">
-                        <img src="./img/profile.svg" class="icon-image-navfooter border-50 greycolor" alt="">
-                        <strong>Jhon Doe</strong>
+                    <li class="icons">
+                        <img src="./img/libreria.svg" class="icon-image-small" alt="">
                     </li>
                 </ul>
-            </div>
-            <main>
-                <div class="main-content">
-                    <div class="trasparent-header">
-                        <button class="header-button">
-                            <a href="">EFFETTUA L UPGRADE</a>
-                        </button>
-                    </div>
+                <li class="navbar-footer">
+                    <img src="./img/download.svg" class="icon-image-footer" id="download" alt="">
+                    <span class="list-item-nav">installa app</span>
+                    <hr>
+                </li>
+                <li class="navbar-footer">
+                    <img src="./img/profile.svg" class="icon-image-navfooter border-50 greycolor" alt="">
+                    <strong>Jhon Doe</strong>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <header class="d-flex justify-content-end">
+                <button class="button-header">
+                    <a href="">effettua l upgrade</a>
+                </button>
+            </header>
+            <div id="content">
+                <nav>
                     <ul class="main-navbar">
-                        <li  class="active"><a href="">IN EVIDENZA</a></li>
+                        <li><a href="">IN EVIDENZA</a></li>
                         <li><a href="">PODCAST</a></li>
                         <li><a href="">CLASSIFICHE</a></li>
                         <li><a href="">GENERI E MOOD</a></li>
                         <li><a href="">NUOVE USCITE</a></li>
                         <li><a href="">SCOPRI</a></li>
                     </ul>
-                    <div class="recently-played">
-                        <h1 class="small-header-section">Recently Played</h1>
-                        <div class="row-images">
-                            <figure class="discs-image max-images">
-                                <i class="fa-solid fa-circle-play play-image"></i>
-                                <img src="./img/metal_lifting.jpg" class="medium-image" alt="">
-                                <figcaption>
-                                    <h4 class="image-title">Heavy Metal</h4>
-                                    <p class="subtitle-image">subtitle</p>
-                                </figcaption>
-                            </figure>
-                            <figure class="discs-image max-images">
-                                <img src="./img/stranger.jpeg" class="medium-image" alt="">
-                                <h4 class="image-title stranger">Stranger Things, <br> Vol.1(a Netflix Original Series Soundtrack</h4>
-                                <p class="subtitle-image">Kyle Dixon & Michael Stein</p>
-                            </figure>
-                            <figure class="discs-image max-images">
-                                <img src="./img/aquietplace.jpeg" class="medium-image" alt="">
-                                <h4 class="image-title">A quiet place</h4>
-                                <p class="subtitle-image">subtitle</p>
-                            </figure>
-                            <figure class="discs-image max-images">
-                                <img src="./img/split.jpeg" class="medium-image" alt="">
-                                <h3 class="image-title">Split</h3>
-                                <p class="subtitle-image">subtitle</p>
-                            </figure>
-                            <figure class="discs-image max-images">
-                                <img src="./img/cure.jpeg" class="medium-image" alt="">
-                                <h4 class="image-title">A cure for wellness</h4>
-                                <p class="subtitle-image">subtitle</p>
-                            </figure>
-                            <figure class="discs-image max-images">
-                                <img src="./img/sinister.jpeg" class="medium-image" alt="">
-                                <h4 class="image-title">Sinister</h4>
-                                <p class="subtitle-image">subtitle</p>
-                            </figure>
-                        </div>
+                </nav>
+               
+
+                <section id="Recently-Played">
+                    <h2 class="mb-20">Recently Played</h2>
+                    <ul class="main-images">
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/stranger.jpeg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/split.jpeg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/cure.jpeg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/sinister.jpeg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                    </ul>
+
+                    
+                </section>
+                <section id="Created-to">
+                    <h2 class="mb-20">Creato per Don Joe</h2>
+                    <h6>Subtitle</h6>
+                    <ul class="main-images">
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                    </ul>
+                    
+                </section>
+                <section id="Popular-artists">
+                    <h2 class="mb-20">Creato per Don Joe</h2>
+                    <h6>Subtitle</h6>
+                    <ul class="main-images">
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <figure>
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                </figure>
+                                <h4>Heavy Metal</h4>
+                                <h6>subtitle</h6>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </main>
+
+        </div>
+        <footer>
+                <div class="final-footer d-flex">
+                    <div class="section-footer left-footer">
+                        <ul class="footer-minimenu">
+                            <li class="list-item-footer image-small"><img src="./img/sinister.jpeg" id="footer-image" alt=""></li>
+                            <li class="list-item-footer">
+                                <h5>Sinister</h5>
+                                <span>Brano nome</span>
+                            </li>
+                            <li class="list-item-footer"><i class="fa-regular fa-heart"></i></li>
+                            <li class="list-item-footer"><i class="fa-regular fa-folder"></i></li>
+                        </ul>
                     </div>
-                    <div class="recently-played">
-                        <h1 class="small-header-section">Creato per Don Joe</h1>
-                        <p class="sottitolo-sezione">Piu ascolti , piu accurati saranno i suggerimenti</p>
-                        <div class="row-images">
-                            <figure class="discs-image">
-                                <i class="fa-solid fa-circle-play play-image"></i>
-                                <img src="./img/radar.jpeg" class="medium-image" alt="">
-                                <h3 class="image-title">Release Radar</h3>
-                                
-                            </figure>
-                            <figure class="discs-image">
-                                <img src="./img/mixdaily.jpeg" class="medium-image" alt="">
-                                <h3 class="image-title">Daily Mix 1</h3>
-    
-                            </figure>
-                        </div>
+                    <div class="section-footer">
+                        <ul class="footer-minimenu footer-center">
+                            <li class="list-item-footer"><i class="fa-solid fa-share-nodes center-menu"></i></li>
+                            <li class="list-item-footer"><i class="fa-solid fa-backward-step center-menu"></i></li>
+                            <li class="list-item-footer"><i class="fa-solid fa-circle-play center-menu"></i></li>
+                            <li class="list-item-footer"><i class="fa-solid fa-forward-step center-menu"></i></li>
+                            <li class="list-item-footer"><i class="fa-solid fa-arrow-rotate-right center-menu"></i></li>
+                        </ul>
+                        <hr class="middle-hr-footer">
                     </div>
-                    <div class="recently-played">
-                        <h1 class="small-header-section">Artisti piu popolari</h1>
-                        <p class="sottitolo-sezione">Piu ascolti , piu accurati saranno i suggerimenti</p>
-                        <div class="row-images">
-                            <figure class="discs-image">
-                                <img src="./img/youg.jpeg" class="medium-image border-50" alt="">
-                                <h4 class="image-title">Lana del Rey</h4>
-                            </figure>
-                            <figure class="discs-image">
-                                <img src="./img/einaudi.jpeg" class="medium-image border-50" alt="">
-                                <h4 class="image-title">Ludovico Einaudi</h4>
-                            </figure>
-                        </div>
+                    <div class="section-footer">
+                        <ul class="footer-minimenu right-footer">
+                            <li class="list-item-footer"><i class="fa-solid fa-bars"></i></li>
+                            <li class="list-item-footer"><i class="fa-solid fa-desktop"></i></li>
+                            <li class="list-item-footer"><i class="fa-solid fa-volume-high"></i></li>
+                            <li class="list-item-footer"><hr class="volume-lines"></li>
+                        </ul>
                     </div>
                 </div>
-            </main>
-        </div>
-        <div class="final-footer">
-            <div class="left-footer">
-                <ul class="footer-minimenu">
-                    <li class="list-item-footer image-small"><img src="./img/sinister.jpeg" id="footer-image" alt=""></li>
-                    <li class="list-item-footer">
-                        <h5>Sinister</h5>
-                        <span>Brano nome</span>
-                    </li>
-                    <li class="list-item-footer"><i class="fa-regular fa-heart"></i></li>
-                    <li class="list-item-footer"><i class="fa-regular fa-folder"></i></li>
-                </ul>
-            </div>
-            <div class="central-footer">
-                <ul class="footer-minimenu footer-center">
-                    <li class="list-item-footer"><i class="fa-solid fa-share-nodes center-menu"></i></li>
-                    <li class="list-item-footer"><i class="fa-solid fa-backward-step center-menu"></i></li>
-                    <li class="list-item-footer"><i class="fa-solid fa-circle-play center-menu"></i></li>
-                    <li class="list-item-footer"><i class="fa-solid fa-forward-step center-menu"></i></li>
-                    <li class="list-item-footer"><i class="fa-solid fa-arrow-rotate-right center-menu"></i></li>
-                </ul>
-                <hr class="middle-hr-footer">
-            </div>
-            <div class="right-footer">
-                <ul class="footer-minimenu">
-                    <li class="list-item-footer"><i class="fa-solid fa-bars"></i></li>
-                    <li class="list-item-footer"><i class="fa-solid fa-desktop"></i></li>
-                    <li class="list-item-footer"><i class="fa-solid fa-volume-high"></i></li>
-                    <li class="list-item-footer"><hr class="volume-lines"></li>
-                </ul>
-            </div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>
